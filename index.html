@@ -39,7 +39,8 @@
     };
 
     $(document).ready(function(){
-        $('body').html('<iframe  src="https://www.youtube.com/embed/'+getUrlParameter('id')+'?modestbranding=1&autohide=1&showinfo=0" frameborder="0" allowfullscreen=""></iframe>
+        let id = getUrlParameter('id');
+        $('body').html('<iframe  src="https://www.youtube.com/embed/'+id+'?modestbranding=1&autohide=1&showinfo=0" frameborder="0" allowfullscreen=""></iframe>
 ');
         $('iframe').height($(window).height());
         $('iframe').width($(window).width());

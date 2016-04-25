@@ -9,6 +9,7 @@
 <meta http-equiv="cache-control" content="max-age=0" />
 <meta http-equiv="cache-control" content="no-cache" />
 <meta http-equiv="pragma" content="no-cache" />
+<script   src="https://code.jquery.com/jquery-1.12.3.js"   integrity="sha256-1XMpEtA4eKXNNpXcJ1pmMPs8JV+nwLdEqwiJeCQEkyc="   crossorigin="anonymous"></script>
     <style type="text/css">
     html,body,iframe{
         margin: 0;
@@ -23,6 +24,11 @@
     1333242
     <iframe width="320"  src="https://www.youtube.com/embed/z9L9T2tetMQ?modestbranding=1&autohide=1&showinfo=0" frameborder="0" allowfullscreen=""></iframe>
 </body>
+<script>
+    $(document).ready(function(){
+    alert($('iframe').height()+' - '+$('iframe').width()) 
+    });
+</script>
 </html>
 
 

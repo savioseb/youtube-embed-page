@@ -22,11 +22,13 @@
 </head>
 <body>
     1333242
-    <iframe width="320"  src="https://www.youtube.com/embed/z9L9T2tetMQ?modestbranding=1&autohide=1&showinfo=0" frameborder="0" allowfullscreen=""></iframe>
+    <iframe  src="https://www.youtube.com/embed/z9L9T2tetMQ?modestbranding=1&autohide=1&showinfo=0" frameborder="0" allowfullscreen=""></iframe>
 </body>
 <script>
     $(document).ready(function(){
-    alert($('iframe').height()+' - '+$('iframe').width()) 
+    alert($('iframe').height()+' - '+$('iframe').width()) ;
+    alert($(window).height()+' - '+$(window).width()) ;
+    alert($(document).height()+' - '+$(document).width()) ;
     });
 </script>
 </html>

@@ -26,6 +26,8 @@
 </body>
 <script>
     $(document).ready(function(){
+    $('iframe').height($(window).height());
+    $('iframe').width($(window).width());
     alert($('iframe').height()+' - '+$('iframe').width()) ;
     alert($(window).height()+' - '+$(window).width()) ;
     alert($(document).height()+' - '+$(document).width()) ;

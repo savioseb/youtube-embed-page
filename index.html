@@ -21,10 +21,26 @@
     </style>
 </head>
 <body>
-    <iframe  src="https://www.youtube.com/embed/z9L9T2tetMQ?modestbranding=1&autohide=1&showinfo=0" frameborder="0" allowfullscreen=""></iframe>
 </body>
 <script>
+    var getUrlParameter = function getUrlParameter(sParam) {
+        var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+            sURLVariables = sPageURL.split('&'),
+            sParameterName,
+            i;
+    
+        for (i = 0; i < sURLVariables.length; i++) {
+            sParameterName = sURLVariables[i].split('=');
+    
+            if (sParameterName[0] === sParam) {
+                return sParameterName[1] === undefined ? true : sParameterName[1];
+            }
+        }
+    };
+
     $(document).ready(function(){
+        $('body').html('<iframe  src="https://www.youtube.com/embed/'+getUrlParameter('id')+'?modestbranding=1&autohide=1&showinfo=0" frameborder="0" allowfullscreen=""></iframe>
+');
         $('iframe').height($(window).height());
         $('iframe').width($(window).width());
         $(window).resize(function(){
